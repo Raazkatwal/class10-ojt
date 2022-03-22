@@ -1,0 +1,253 @@
+<html>
+<head>
+  <link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+    	*{
+      		margin: 0;
+      		padding: 0;
+      		font-family: sans-serif;
+      		box-sizing: border-box;
+    	}
+    	.banner{
+      		width: 100%;
+      		height: 100vh;
+      		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("us.jpg"); 
+      		background-size: cover;
+      		background-position: center;
+    	}
+    	.navbar{
+      		width: 85%;
+      		margin: auto;
+      		padding: 35px 0;
+      		display: flex;
+      		align-items: center;
+      		justify-content: space-between;
+    	}
+    	.logo{
+      		width: 150px;
+      		cursor: pointer;
+    	}
+    	.navbar ul li {
+      		list-style: none;
+      		display: inline-block;
+      		margin: 0 20px;
+      		position: relative;
+    	}
+    	.navbar ul li a{
+      		text-decoration: none;
+      		color: white;
+      		text-transform: uppercase;
+    	}
+    	.navbar ul li::after{
+      		content:'';
+      		height: 3px;
+      		width: 0;
+      		position: absolute;
+      		background: #099fff;
+      		left: 0;
+      		bottom: -10px;
+      		transition: 0.5s;
+    	}
+    	.navbar ul li:hover::after{
+      		width: 100%;
+    	}
+    	.contact{
+    		position: relative;
+    		min-height: 80vh;
+    		padding: 50px 100px;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		flex-direction: column;
+    	}
+    	.contact .content{
+    		max-width: 800px;
+    		text-align: center;
+    	}
+    	.contact .content h2{
+    		font-size: 36px;
+    		color: white;
+    	}
+    	.contact .content p{
+    		font-weight: 500;
+    		color: white;
+    	}
+    	.container{
+    		width: 100%;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		margin-top: 30px;
+    	}
+    	.container .contactinfo{
+    		width: 50%;
+    		display: flex;
+    		flex-direction: column;
+    	}
+    	.container .contactinfo .box{
+    		position: relative;
+    		padding: 20px 0;
+    		display: flex;
+    	}
+    	.container .contactinfo .box .icon{
+    		min-width: 60px;
+    		height: 60px;
+    		background: white;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		border-radius: 50%;
+    		font-size: 22px;
+    	}
+    	.container .contactinfo .box .text{
+    		display: flex;
+    		margin-left: 20px;
+    		font-size: 16px;
+    		color: white;
+    		flex-direction: column;
+    		font-weight: 300;
+    	}
+    	.container .contactinfo .box .text h3{
+    		font-weight: 500;
+    		color: #00bcd4;
+    	}
+    	.contactform{
+    		width: 40%;
+    		padding: 40px;
+    		background: white;
+    	}
+    	.contactform h2{
+    		font-size: 30px;
+    		color: #333;
+    		font-weight: 500;
+    	}
+    	.contactform .inputbox{
+    		position: relative;
+    		width: 100%;
+    		margin-top: 10px;
+    	}
+    	.contactform .inputbox input,
+    	.contactform .inputbox textarea{
+    		width: 100%;
+    		padding: 5px 0;
+    		font-size: 16px;
+    		margin: 10px 0;
+    		border: none;
+    		border-bottom: 2px solid #333;
+    		outline: none;
+    		resize: none;
+    	}
+    	.contactform .inputbox span{
+    		position: absolute;
+    		left: 0;
+    		padding: 5px 0;
+    		font-size: 16px;
+    		margin: 10px 0;
+    		pointer-events: none;
+    		transition: 0.5s;
+    		color: #666;
+    	}
+    	.contactform .inputbox input:focus ~ span,
+    	.contactform .inputbox input:valid ~ span,
+    	.contactform .inputbox textarea:focus ~ span,
+    	.contactform .inputbox textarea:valid ~ span{
+    		color: #e91e63;
+    		font-size: 12px;
+    		transform: translateY(-20px);
+    	}
+    	.contactform .inputbox input[type="submit"]{
+    		width: 100px;
+    		background: #00bcd4;
+    		color: white;
+    	}
+      #loading{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white
+      url('https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif')
+      no-repeat center;
+      z-index: 99999;
+    }
+  </style>
+	<title>Contact us</title>
+</head>
+<body onload="load()">
+  <div id="loading"></div>
+  <div class="banner">
+    <div class="navbar">
+      <a href="index.html"><img src="LogoMakr.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="aboutme.html">About us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <section class="contact">
+  		<div class="content">
+  			<h2>Contact Us</h2>
+  		</div>
+  		<div class="container">
+  			<div class="contactinfo">
+  				<div class="box">
+  					<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+</svg></div>
+  					<div class="text">
+  						<h3>Address</h3>
+  						<p>Hatkhola,Biratnagar-8,Morang</p>
+  					</div>
+  				</div>
+  				<div class="box">
+  					<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg></div>
+  					<div class="text">
+  						<h3>Phone</h3>
+  						<p>9816314773</p>
+  					</div>
+  				</div>
+  				<div class="box">
+  					<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg></div>
+  					<div class="text">
+  						<h3>Email</h3>
+  						<p>raazkatwal5@gmail.com</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="contactform">
+  				<form>
+  					<h2>Send Message</h2>
+  					<div class="inputbox">
+  						<input type="text" name="" required>
+  						<span>Full Name</span>
+  					</div>
+  					<div class="inputbox">
+  						<input type="text" name="" required>
+  						<span>Email</span>
+  					</div>
+  					<div class="inputbox">
+  						<textarea required="required"></textarea>
+  						<span>Type your Message...</span>
+  					</div>
+  					<div class="inputbox">
+  						<input type="submit" name="" value="Send">
+  					</div>
+  				</form>
+  			</div>
+  		</div>
+  	</section>
+  </div>
+  <script type="text/javascript">
+    var preloader = document.getElementById("loading");
+    function load() {
+      preloader.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
