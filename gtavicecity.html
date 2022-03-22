@@ -1,0 +1,258 @@
+<html>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color:black;
+    }
+    .navbar{
+      width: 100%;
+      margin: auto;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: grey;
+    }
+    .logo{
+      width: 150px;
+      cursor: pointer;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+    .navbar ul li::after{
+      content:'';
+      height: 3px;
+      width: 0;
+      position: absolute;
+      background: #099fff;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+      width: 100%;
+    }
+    #loading{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white
+      url('https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif')
+      no-repeat center;
+      z-index: 99999;
+    }
+    .name{
+      font-weight: 40px;
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .back{
+      width: 100px;
+      padding: 10px 15px;
+      text-align: center;
+      margin: 20px 10px;
+      border-radius: 15px;
+      font-weight: bold;
+      border: 2px solid #099FFF;
+      background: transparent;
+      color: #555;
+      cursor: pointer;
+      transition: .5s;
+    }
+    button:hover{
+      background: #099FFF;
+      color: white;
+    }
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .hero{
+      width: 100%;
+    }
+    .row{
+        width: 90%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col{
+        flex-basis: 45%;
+        top: 0px;
+    }
+    .slider{
+        height: 80vh;
+        display: flex;
+    }
+    .product img{
+        height: 19vh;
+          margin-bottom: 9px;
+          cursor: pointer;
+          opacity: 0.6;
+          max-width: 200px;
+    }
+    .product img:hover{
+        opacity: 1;
+    }
+    .preview img{
+        height: 100%;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+        h2{
+            font-size: 45px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .rating{
+            display: flex;
+            height: 15px;
+        }
+        .rating .fa{
+            color: #008000;
+        }
+        .price{
+            color: #fe980f;
+            font-size: 26px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        input{
+            width: 30px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            text-align: center;
+        }
+        button{
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+            border: 0;
+            border-radius: 5px;
+            background: #fe980f;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        button .fa{
+            margin-right: 10px;
+        
+        }
+        .related{
+            width: 90%;
+            margin: 0 auto 40px;
+        }
+        .related .row{
+            width: 100%;
+            height: auto;
+        }
+        .columns{
+            flex-basis: 22%;
+            height: 100%;
+        }
+        .items img{
+            width: 100%;
+        }
+        .details{
+            margin-top: 20px;
+        }
+        .details p{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .details .rating{
+            margin: 10px 0;
+        }
+  </style>
+	<title>
+    Buy GTA San Andreas
+	</title>
+</head>
+<body onload="load()">
+  <div id="loading"></div>
+    <div class="navbar">
+      <a href="index.html"><img src="LogoMakr.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="aboutme.html">About us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <a href="shop.html"><button type="button" class="back">Back</button></a>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="gtavc.jpg" alt="" onclick="clickme(this)">
+                        <img src="gtavc(1).jfif" alt="" onclick="clickme(this)">
+                        <img src="gtavc(2).jfif" alt="" onclick="clickme(this)">
+                        <img src="gtavc(3).jfif" alt="" onclick="clickme(this)">
+                    </div>
+                    <div class="preview">
+                        <img src="gtavc.jpg" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <h2>Grand Theft Auto: Vice City</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Developer: Rockstar Games</p>
+                    <p><h4>Platform:</h4> PC</p>
+                    <h3>Minimum System Requirements:</h3>OS: Microsoft® Windows® 2000/XP <br>
+Processor: 800 MHz Intel Pentium III or 800 MHz AMD Athlon or 1.2GHz Intel Celeron or 1.2 GHz AMD Duron processor <br>
+Memory: 128 MB of RAM <br>
+Graphics: 32 MB video card with DirectX 9.0 compatible drivers ("GeForce" or better) <br>
+DirectX Version: Microsoft DirectX® 9.0 <br>
+Hard Drive: 915 MB of free hard disk space (+ 635 MB if video card does NOT support DirectX Texture Compression) <br>
+Sound Card: Sound Card with DirectX 9.0</p>
+                    <a href="shop.html"><button type="button" onclick="bought()">
+                        <i class="fa fa-shopping-cart"></i>
+                        Rs.945</button></a>
+                </div>
+            </div>
+        </div>
+  </div>
+  <script type="text/javascript">
+    var preloader = document.getElementById("loading");
+    function load() {
+      preloader.style.display = 'none';
+    }
+    function clickme(smallImg) {
+      var fullImg = document.getElementById("imagebox");
+      fullImg.src = smallImg.src;
+    }
+    function bought(){
+        window.alert("Your game wil be downloaded soon...")
+    }
+  </script>
+</body>
+</html>
