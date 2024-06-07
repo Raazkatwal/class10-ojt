@@ -1,0 +1,48 @@
+.shop-banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #3B4546;
+    background-size: cover;
+    background-position: center;
+  }
+  .name{
+    font-weight: 40px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+  img{
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  img:hover{
+    opacity: 80%;
+  }
+  h4{
+    text-align: center;
+  }
+  a:hover{
+    color: #0DEEC5;
+  }
+  a{
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .gta{
+    background-color: #252726;
+  }
+  .gta table{
+    margin-left: 8%;
+  }
+  .mc{
+    background: linear-gradient(#252726,#17273B);
+  }
+  .mc table{
+    margin-left: 28%;
+  }
+  table tr td p{
+    font-size: 12px;
+    text-align: center;
+    color: #DDDFE1;
+  }

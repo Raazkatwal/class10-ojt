@@ -1,0 +1,24 @@
+.col{
+    flex-basis: 45%;
+    top: 0px;
+    margin-left: 18%;
+}
+.slider{
+    height: 80vh;
+    display: unset;
+}
+.product img{
+      height: 19vh;
+      margin-bottom: 9px;
+      cursor: pointer;
+      opacity: 0.6;
+      max-width: 250px;
+      margin-top: 2%;
+}
+.preview img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 100%;
+}
