@@ -1,124 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  .banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/bg.jpg); 
-    background-size: cover;
-    background-position: center;
-  }
-  .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo{
-    width: 150px;
-    cursor: pointer;
-  }
-  .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-  }
-  .navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-  }
-  .navbar ul li::after{
-    content:'';
-    height: 3px;
-    width: 0;
-    position: absolute;
-    background: #099fff;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  .navbar ul li:hover::after{
-    width: 100%;
-  }
-  .content{
-    width: 100%;
-    position: 100%;
-    top: 50%;
-    transform: translateY(50%);
-    text-align: center;
-    color: white;
-  }
-  .content h1{
-    font-size: 70px;
-    margin-top: 80px;
-  }
-  .content p{
-    margin: 20px auto;
-    font-weight: 25px;
-    line-height: 25px;
-  }
-  #button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #099FFF;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    transition: .5s;
-  }
-  #button:hover{
-    background: #099FFF;
-  }
-  .back{
-    width: 100px;
-    padding: 10px 15px;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    border: 2px solid #099FFF;
-    background: transparent;
-    color: #555;
-    cursor: pointer;
-    transition: .5s;
-  }
-  .back:hover{
-    background: #099FFF;
-    color: white;
-  }
-  #loading{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: white
-    url('https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif')
-    no-repeat center;
-    z-index: 99999;
-  }
-  .name{
-    font-weight: 40px;
-    font-size: 36px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .hero{
-    width: 100%;
-  }
-  .row{
-      width: 90%;
-      height: 100vh;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background: #099fff;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: 100%;
+  top: 50%;
+  transform: translateY(50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 25px;
+  line-height: 25px;
+}
+
+#button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #099fff;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#button:hover {
+  background: #099fff;
+}
+
+.back {
+  width: 100px;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: 2px solid #099fff;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.back:hover {
+  background: #099fff;
+  color: white;
+}
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: white url("https://micro-measurements.com/sites/all/themes/vpg/images/double-ring.gif") no-repeat center;
+  z-index: 99999;
+}
+
+.name {
+  font-weight: 40px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+}
+
+.row {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,12 +1,14 @@
-.contact-banner{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/us.jpg"); 
-    background-size: cover;
-    background-position: center;
+.contact-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/us.jpg");
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
-.contact{
+
+.contact {
   position: relative;
   min-height: 80vh;
   padding: 50px 100px;
@@ -15,36 +17,43 @@
   align-items: center;
   flex-direction: column;
 }
-.contact .content{
+
+.contact .content {
   max-width: 800px;
   text-align: center;
 }
-.contact .content h2{
+
+.contact .content h2 {
   font-size: 36px;
   color: white;
 }
-.contact .content p{
+
+.contact .content p {
   font-weight: 500;
   color: white;
 }
-.container{
+
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
-.container .contactinfo{
+
+.container .contactinfo {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.container .contactinfo .box{
+
+.container .contactinfo .box {
   position: relative;
   padding: 20px 0;
   display: flex;
 }
-.container .contactinfo .box .icon{
+
+.container .contactinfo .box .icon {
   min-width: 60px;
   height: 60px;
   background: white;
@@ -54,7 +63,8 @@
   border-radius: 50%;
   font-size: 22px;
 }
-.container .contactinfo .box .text{
+
+.container .contactinfo .box .text {
   display: flex;
   margin-left: 20px;
   font-size: 16px;
@@ -62,27 +72,32 @@
   flex-direction: column;
   font-weight: 300;
 }
-.container .contactinfo .box .text h3{
+
+.container .contactinfo .box .text h3 {
   font-weight: 500;
   color: #00bcd4;
 }
-.contactform{
+
+.contactform {
   width: 40%;
   padding: 40px;
   background: white;
 }
-.contactform h2{
+
+.contactform h2 {
   font-size: 30px;
   color: #333;
   font-weight: 500;
 }
-.contactform .inputbox{
+
+.contactform .inputbox {
   position: relative;
   width: 100%;
   margin-top: 10px;
 }
+
 .contactform .inputbox input,
-.contactform .inputbox textarea{
+.contactform .inputbox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -92,7 +107,8 @@
   outline: none;
   resize: none;
 }
-.contactform .inputbox span{
+
+.contactform .inputbox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -102,15 +118,17 @@
   transition: 0.5s;
   color: #666;
 }
-.contactform .inputbox input:focus ~ span,
-.contactform .inputbox input:valid ~ span,
-.contactform .inputbox textarea:focus ~ span,
-.contactform .inputbox textarea:valid ~ span{
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
 }
-.contactform .inputbox input[type="submit"]{
+
+.contactform .inputbox input[type="submit"] {
   width: 100px;
   background: #00bcd4;
   color: white;
